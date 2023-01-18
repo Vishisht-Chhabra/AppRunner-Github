@@ -1,5 +1,5 @@
 version: 1.0
-runtime: dotnet6
+runtime: .NET 6
 build:
   commands:
     build:
