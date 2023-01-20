@@ -3,7 +3,7 @@ runtime: dotnet6
 build:
   commands:
     build:
-      - dotnet publish -c Release -o out
+      - dotnet publish HelloWorldDotNetApp.csproj -c Release -o out
 run:
   command: dotnet out/HelloWorldDotNetApp.dll
   network:
