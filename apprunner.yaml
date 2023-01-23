@@ -5,10 +5,10 @@ build:
     build:
       - dotnet publish HelloWorldDotNetApp.csproj -c Release -o out
 run:
-  command: dotnet out/HelloWorldDotNetApp.dll
+  command: dotnet HelloWorldDotNetApp.dll
   network:
-    port: 8080
+    port: 5000
     env: APP_PORT
   env:
     - name: ASPNETCORE_URLS
-      value: "http://*:8080"
+      value: "http://*:5000"
